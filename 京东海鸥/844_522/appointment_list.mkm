@@ -1,0 +1,10 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="354" y="120" color="16711680" offsetX="109" offsetY="61" defaultDirection="9" direction="9" textMaxWidth="203" text="输入字符大于等于两个字的时候，随输入触发搜索"/>
+    <TextMark x="563" y="114" color="16711680" offsetX="32" offsetY="6" defaultDirection="9" direction="9" textMaxWidth="148" text="点击同样可以搜索"/>
+    <TextMark x="570" y="341" color="16711680" offsetX="63" offsetY="9" defaultDirection="9" direction="9" textMaxWidth="215" text="分页：无上一页为灰色，有为蓝色；下一页同理"/>
+    <TextMark x="562" y="277" color="16711680" offsetX="68" offsetY="29" defaultDirection="9" direction="9" textMaxWidth="141" text="点击选中；再次点击取消选中"/>
+    <TextMark x="549" y="198" color="16711680" offsetX="72" offsetY="23" defaultDirection="9" direction="9" textMaxWidth="171" text="如果选择组织架构，则该组织架构下所有条，默认全选；"/>
+    <TextMark x="277" y="402" color="16711680" offsetX="82" offsetY="31" defaultDirection="5" direction="5" textMaxWidth="100" text="跟随checkbox显示/隐藏"/>
+  </Marks>
+</MKM>

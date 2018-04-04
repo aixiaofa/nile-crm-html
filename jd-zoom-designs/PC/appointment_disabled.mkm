@@ -1,0 +1,6 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="473" y="456" color="16711680" offsetX="119" offsetY="4" defaultDirection="9" direction="9" textMaxWidth="248" text="有未填写完成项，则不可点（禁用）&#xD;"/>
+    <TextMark x="528" y="413" color="16711680" offsetX="42" offsetY="20" defaultDirection="9" direction="9" textMaxWidth="100" text="默认readonly"/>
+  </Marks>
+</MKM>

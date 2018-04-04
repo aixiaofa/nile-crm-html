@@ -1,0 +1,46 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <ColorMark x="310" y="610" color="16711680" offsetX="78" offsetY="58" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="493" y="658" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="286" y="856" color="16711680" offsetX="38" offsetY="38" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="439" y="875" color="16711680" offsetX="50" offsetY="50" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="168" y="1018" color="16711680" length="960" direction="12"/>
+    <LengthMark x="1090" y="582" color="16711680" length="540" direction="3"/>
+    <LengthMark x="1552" y="859" color="16711680" length="280" direction="12"/>
+    <LengthMark x="1559" y="830" color="16711680" length="140" direction="3"/>
+    <LengthMark x="1607" y="899" color="16711680" length="30" direction="3"/>
+    <LengthMark x="1579" y="915" color="16711680" length="230" direction="12"/>
+    <LengthMark x="546" y="1533" color="16711680" length="250" direction="12"/>
+    <LengthMark x="774" y="1527" color="16711680" length="30" direction="3"/>
+    <ColorMark x="693" y="1500" color="16711680" offsetX="26" offsetY="16" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="475" y="1584" color="16711680" offsetX="19" offsetY="19" defaultDirection="5" colorSystem="hex"/>
+    <ColorMark x="704" y="1807" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="3771" y="1495" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="3804" y="1416" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="403" y="2252" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="388" y="2316" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <TextMark x="300" y="2204" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="100" text="#333333"/>
+    <TextMark x="245" y="2243" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="100" text="#555555"/>
+    <ColorMark x="938" y="871" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="3674" y="1643" color="16711680" length="355" direction="12"/>
+    <LengthMark x="3685" y="1351" color="16711680" length="372" direction="3"/>
+    <LengthMark x="5060" y="1352" color="16711680" length="450" direction="3"/>
+    <LengthMark x="3691" y="1432" color="16711680" length="315" direction="12"/>
+    <LengthMark x="3738" y="1399" color="16711680" length="40" direction="3"/>
+    <TextMark x="3778" y="1375" color="16711680" offsetX="48" offsetY="15" defaultDirection="9" direction="9" textMaxWidth="70" text="#333333"/>
+    <TextMark x="3755" y="1468" color="16711680" offsetX="140" offsetY="6" defaultDirection="9" direction="9" textMaxWidth="100" text="#555555"/>
+    <ColorMark x="1834" y="1570" color="16711680" offsetX="26" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <TextMark x="1746" y="1500" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="100" text="#333333"/>
+    <TextMark x="1520" y="1542" color="16711680" offsetX="30" offsetY="15" defaultDirection="5" direction="5" textMaxWidth="100" text="#555555"/>
+    <TextMark x="2120" y="921" color="16711680" offsetX="157" offsetY="150" defaultDirection="9" direction="9" textMaxWidth="241" text="我的会议日程：&#xD;（1）获取当天的会议日程&#xD;（2）最大条数不超过三条&#xD;旨在让用户只关心最近的会议，安排眼下的工作"/>
+    <TextMark x="2114" y="598" color="16711680" offsetX="101" offsetY="71" defaultDirection="9" direction="9" textMaxWidth="100" text="点击，跳转到我的设置页面"/>
+    <TextMark x="616" y="1815" color="16711680" offsetX="130" offsetY="67" defaultDirection="10" direction="10" textMaxWidth="346" text="发起预约时，要验证必填字端：会议主题，开始时间，结束时间，参与者。重复周期默认为无。"/>
+    <TextMark x="1830" y="1589" color="16711680" offsetX="32" offsetY="16" defaultDirection="10" direction="10" textMaxWidth="100" text="这里要调用日期时间选择器"/>
+    <TextMark x="1827" y="1670" color="16711680" offsetX="39" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="296" text="时长根据开始时间和结束时间自动计算，不需要用户填写。如60分钟、90分钟、120分钟等整数时间按照小时显示，其他显示分钟即可"/>
+    <TextMark x="5082" y="1522" color="16711680" offsetX="69" offsetY="25" defaultDirection="9" direction="9" textMaxWidth="216" text="显示列表逻辑：&#xD;（1）如未进行关键词搜索，则默认显示最近联系人&#xD;（2）若已经选择完联系人，则显示已选联系人列表，用户可以取消勾选&#xD;（3）输入搜索条件后，显示搜索结果。弹框内部允许滚动"/>
+    <TextMark x="4799" y="1713" color="16711680" offsetX="138" offsetY="42" defaultDirection="5" direction="5" textMaxWidth="200" text="调用本地outlook的新建邮件，上述文字自动复制过去"/>
+    <RectMark x="2534" y="576" color="16711680" offsetX="479" offsetY="235"/>
+    <TextMark x="2531" y="626" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="280" text="配色说明&#xD;&#xD;黑色正标： #333333&#xD;黑色副标、正文  ：#555555&#xD;线框border：#f1f1f1&#xD;灰色正文： #787878&#xD;"/>
+    <ColorMark x="2103" y="951" color="16711680" offsetX="14" offsetY="8" defaultDirection="9" colorSystem="hex"/>
+  </Marks>
+</MKM>

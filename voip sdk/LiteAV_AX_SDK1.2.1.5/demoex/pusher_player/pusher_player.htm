@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<TITLE>对象 LiteAVAxPlugin 的 ATL 测试页</TITLE>
+<style>    
+ .div-inline {display:inline}
+</style>
+<script type="text/javascript" src="pusher_player.js" charset="utf-8"></script>
+</HEAD>
+<BODY onload='doCheckIE();'>
+    <table>
+        <tr>
+            <td colspan="2">
+                PUSH_URL:
+                <input size="90" id="PusherUrlTextField" value="">
+                <input type=submit value="StartPush" onClick="doStartPush(document.getElementById('PusherUrlTextField').value);">
+                <input type=submit value="StopPush" onClick="doStopPush();">
+                <!--<input type=submit value="获取推流地址" onClick="getNewPushUrl();">-->
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                摄像头:
+                <select id="cameralistselect"onClick='switchCameraSelect();'>
+                </select>
+                <input type=submit value="刷新摄像头设备" onClick="refreshCamera();">
+                清晰度:
+                <select readonly id="bitrateselect" onClick='BitrateModeChange();'>
+                    <option value=1>超清</option>
+                    <option value=2>高清</option>
+                    <option value=3>标清</option>
+                </select>
+                画面旋转:
+                <select readonly id="rotationselect" onClick='doRotationSelect();'>
+                    <option value=1>还原</option>
+                    <option value=2>顺90度</option>
+                    <option value=3>顺180度</option>
+                    <option value=4>顺270度</option>
+                </select>
+                填充模式:
+                <select readonly id="rendertypeselect" onClick='doRenderTypeSelect();'>
+                    <option value=1>适应</option>
+                    <option value=2>填充</option>
+                </select>
+                分辨率:
+                <select readonly id="resolutionselect" onClick='ResolutionselectModeSelect();'>
+                    <option value=1>320*240</option>
+                    <option value=2>640*480</option>
+                </select>
+                帧率:
+                <select readonly id="fpsrateselect" onClick='doFpsRateSelect();'>
+                    <option value=15>15</option>
+                    <option value=20>20</option>
+                    <option value=25>25</option>
+                    <option value=30>30</option>
+                </select>
+            </td>
+        </tr>
+        <tr>--------------------------------------------------------------------------</tr>
+        <tr>
+            <td colspan="2">
+                PLAY_URL:
+                <input size="90" id="PlayerUrlTextField" value="">
+                <input type=submit value="StartPlay" onClick="doStartPlay(document.getElementById('PlayerUrlTextField').value);">
+                <input type=submit value="StopPlay" onClick="doStopPlay();">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                画面旋转:
+                <select readonly id="player_rotationselect" onClick='doPlayerRotationSelect();'>
+                    <option value=1>还原</option>
+                    <option value=2>顺90度</option>
+                    <option value=3>顺180度</option>
+                    <option value=4>顺270度</option>
+                </select>
+                填充模式:
+                <select readonly id="player_rendertypeselect" onClick='doPlayerRenderTypeSelect();'>
+                    <option value=1>适应</option>
+                    <option value=2>填充</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                pusher视频区域<br/>
+                <object ID="pusher" CLASSID="CLSID:01502AEB-675D-4744-8C84-9363788ED6D6"
+                        codebase="../../sdk/LiteAVAX.cab#version=1,2,1,5"
+                        width="480"
+                        height="360"></object>
+            </td>
+            <td />
+            <td colspan="2">
+                player视频区域<br />
+                <object ID="player" CLASSID="CLSID:99DD15EF-B353-4E47-9BE7-7DB4BC13613C"
+                        codebase="../../sdk/LiteAVAX.cab#version=1,2,1,5"
+                        width="480"
+                        height="360"
+                        events="True"></object>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td>
+                            PushCallBackInfo:<div id="PushCallBackInfoID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            AUDIO_BITRATE:<div id="PUSHAUDIO_BITRATEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CACHE_SIZE:<div id="PUSHCACHE_SIZEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CODEC_CACHE:<div id="PUSHCODEC_CACHEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NET_SPEED:<div id="PUSHNET_SPEEDID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_BITRATE:<div id="PUSHVIDEO_BITRATEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_FPS:<div id="PUSHVIDEO_FPSID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_WIDTH:<div id="PUSHVIDEO_WIDTHID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_HEIGHT:<div id="PUSHVIDEO_HEIGHTID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td />
+            <td colspan="2">
+                <table>
+                    <tr><td>
+                            PlayCallBackInfo:<div id="PlayCallBackInfoID" class="div-inline">--</div>
+                    </td></tr>
+                    <tr>
+                        <td>
+                            AUDIO_BITRATE:<div id="PLAYAUDIO_BITRATEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CACHE_SIZE:<div id="PLAYCACHE_SIZEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CODEC_CACHE:<div id="PLAYCODEC_CACHEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NET_SPEED:<div id="PLAYNET_SPEEDID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_BITRATE:<div id="PLAYVIDEO_BITRATEID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_FPS:<div id="PLAYVIDEO_FPSID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_WIDTH:<div id="PLAYVIDEO_WIDTHID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIDEO_HEIGHT:<div id="PLAYVIDEO_HEIGHTID" class="div-inline">--</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div ID="CheckIEStatus" align="center" style="z-index:10000; display:none; background:#999; position:absolute; left:0px; top:0px; width:100%; height:100%; border:1px solid #F00; ">
+        <h1 style="font-size: 50px">ActiveX插件只支持IE,请用IE打开网页</h1>
+    </div>
+    <script>
+        function doCheckIE() {
+            var bIE = false;
+            if (!!window.ActiveXObject || "ActiveXObject" in window)
+                bIE = true;
+            else if (window.navigator.userAgent.indexOf("MSIE") >= 1)
+                bIE = true;
+            else
+                bIE = false;
+            if (bIE == false)
+            {
+                document.getElementById('CheckIEStatus').style.display = 'block';
+            }
+        }
+    </script>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="302" y="160" color="16711680" offsetX="162" offsetY="20" defaultDirection="6" direction="6" textMaxWidth="100" text="“参与人”输入框已经有选择的同事"/>
+    <TextMark x="528" y="329" color="16711680" offsetX="102" offsetY="52" defaultDirection="9" direction="9" textMaxWidth="159" text="条数小于5条，不显示分页"/>
+  </Marks>
+</MKM>

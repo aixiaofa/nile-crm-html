@@ -1,0 +1,62 @@
+﻿<html>
+  <head>
+    <title>WebRtc Dialer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    
+    <h1>WebRtc Dialer</h1>
+
+    <!-- Configuration Prompt -->
+    <form id="config-form" action="">
+      <label>displayName   <input type="text" name="displayName" value="1002" placeholder="1002"/></label>
+      <label>SIP URI       <input type="text" name="uri" value="1002@rtc.vsbc.com" placeholder="1002@rtc.vsbc.com"/></label>
+      <label>Username      <input type="text" name="authorizationUser" value="1002" placeholder="1002"/></label>
+      <label>Password      <input type="password" name="password" value="1002"/></label>
+      <label>WS Server <input type="text" name="wsServers" value="wss://rtc.vsbc.com:5092/wss" placeholder="wss://rtc.vsbc.com:5092/wss"/></label>
+      <input type="submit" name="configSubmit" value="Create UA" />
+    </form>
+
+    <!-- UA Control Form -->
+    <div id="ua">
+    	<div id="ua-username"></div>
+      <div id="ua-status">Disconnected</div>
+      <button id="ua-register">Register</button>
+      <form id="new-session-form" action="">
+        <label>Enable Video <input type="checkbox" id="ua-video" checked/></label>
+        <label>SIP URI      <input type="text" id="ua-uri" value="1002"/></label>
+        <input type="submit" id="ua-invite-submit" value="Invite" />
+        <input type="submit" id="ua-message-submit" value="Begin Chat" />
+      </form>
+    </div>
+
+    <ul id="session-list"></ul>
+
+
+    <!-- Templates to clone Sessions and Messages -->
+    <ul id="templates">
+      <li id="session-template" class="template session">
+        <h2><strong class="display-name"></strong> <span class="uri"></span></h2>
+        <button class="green">Green</button>
+        <button class="red">Red</button>
+        <form class="dtmf" action="">
+          <label>DTMF <input type="text" maxlength="1" /></label>
+          <input type="submit" value="Send" />
+        </form>
+        <video autoplay>Video Disabled or Unavailable</video>
+        <ul class="messages"></ul>
+        <form class="message-form" action="">
+          <input type="text" placeholder="Type to send a message"/><input type="submit" value="Send" />
+        </form>
+        <button class="mute">mute</button>
+        <button class="unmute">unmute</button>
+      </li>
+    </ul>
+
+    <script src="js/sip-0.7.8.js"></script>
+    <script src="js/ua.js"></script>
+    
+
+  </body>
+</html>

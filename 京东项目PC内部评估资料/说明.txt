@@ -1,0 +1,10 @@
+评估请结合:原型图+设计稿+功能清单，因原型图中可以看到详细流程，尤其是音视频会议中（调用sdk）的部分。
+原型图请从首页开始评估，共有：“首页，会议中，选择屏幕共享，预约会议，个性化设置”
+原型图链接 https://oxjq40.axshare.com
+
+设计稿的尺寸批注请参考 --- demo_spec.png 正式开发前，我会再提供一份更详细的设计稿（增加UI细节三个，宽高尺寸会有变化）
+
+zoom sdk： 
+https://developer.zoom.us/docs/macos/ （macOS）
+https://developer.zoom.us/docs/windows/ (windows)
+

@@ -1,0 +1,9 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="108" y="226" color="16711680" offsetX="228" offsetY="60" defaultDirection="9" direction="9" textMaxWidth="177" text="我的日程的三种状态"/>
+    <TextMark x="165" y="233" color="16711680" offsetX="36" offsetY="21" defaultDirection="9" direction="9" textMaxWidth="100" text="异常&#xD;"/>
+    <TextMark x="428" y="230" color="16711680" offsetX="23" offsetY="13" defaultDirection="9" direction="9" textMaxWidth="114" text="正常，但无数据"/>
+    <TextMark x="666" y="224" color="16711680" offsetX="31" offsetY="13" defaultDirection="9" direction="9" textMaxWidth="100" text="正常"/>
+    <TextMark x="61" y="341" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" direction="9" textMaxWidth="100" text="说明..."/>
+  </Marks>
+</MKM>

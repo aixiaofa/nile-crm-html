@@ -1,0 +1,6 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <TextMark x="232" y="223" color="16711680" offsetX="52" offsetY="52" defaultDirection="9" direction="9" textMaxWidth="164" text="默认输入ID弹框"/>
+    <TextMark x="598" y="224" color="16711680" offsetX="52" offsetY="52" defaultDirection="9" direction="9" textMaxWidth="166" text="当需要输入密码时，具体情况参考文档"/>
+  </Marks>
+</MKM>
